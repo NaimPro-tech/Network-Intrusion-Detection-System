@@ -7,7 +7,21 @@
  0   duration --> running time of a connection --> Scan attack normally takes less time
  1   protocol_type --> tcp, udp, icmp --> some attack are done through specific protocol
  2   service --> network service: http,ftp,telnet,smtp --> refers to an attack targeting a specific service
- 3   flag --> connection status(SF=normal complete, SO=connection attempt rejected, REJ=rejected) --> flag abnormal in many attacks
+ 3   flag --> connection status
+        (
+        SF=normal complete, 
+        SO=connection attempt seen No reply, 
+        REJ=Connection attempt rejected
+        RSTR=Responder sent a reset
+        SH=Originator sent a SYN followed by a FIN
+        RSTO=Connection Estabilished, Originator Abroated
+        S1=Connection Estabilished, Not terminated
+        RSTOS0=Originator sent a SYN followed by a RST
+        S3=Connection Established, Responder Closed but no reply
+        S2=Connection Established, Originator Closed but no reply
+        OTH=Other / Midstream Traffic
+        ) --> flag abnormal in many attacks
+        
  4   src_bytes --> bytes that send from source to destination --> abnormally high/low is suspicious
  5   dst_bytes --> bytes that returned from destination to source --> zero in scan  
  6   land --> source and destination ip/port same or not(0/1) --> this is an attack type itself
