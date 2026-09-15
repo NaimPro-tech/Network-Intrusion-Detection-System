@@ -21,7 +21,7 @@
         S2=Connection Established, Originator Closed but no reply
         OTH=Other / Midstream Traffic
         ) --> flag abnormal in many attacks
-        
+
  4   src_bytes --> bytes that send from source to destination --> abnormally high/low is suspicious
  5   dst_bytes --> bytes that returned from destination to source --> zero in scan  
  6   land --> source and destination ip/port same or not(0/1) --> this is an attack type itself
@@ -76,7 +76,6 @@
  38  dst_host_srv_serror_rate --> SYN error rate (host+service based)
  39  dst_host_rerror_rate --> REJ error rate (host based)
  40  dst_host_srv_rerror_rate --> REJ error (host+service based)
- 41  label --> Attack category['normal','neptune','warezclient','ipsweep','portsweep','teardrop','nmap','satan',
-'smurf','pod','back','guess_passwd','ftp_write','multihop','rootkit','buffer_overflow','imap','warezmaster','phf','land','loadmodule','spy','perl']
+ 41  label --> Attack category-['normal','neptune','warezclient','ipsweep','portsweep','teardrop','nmap','satan','smurf','pod','back','guess_passwd','ftp_write','multihop','rootkit','buffer_overflow','imap','warezmaster','phf','land','loadmodule','spy','perl']
 
  42  difficulty_level --> It is derived from a research where 7 model train 3 times and predict all the records. value that close to 21 means the record is ovious pattern and easy to figure, low value means the record is tricky, complex, majority model failed to catch it. (Do not use as features)
