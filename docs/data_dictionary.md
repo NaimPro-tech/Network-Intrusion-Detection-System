@@ -24,7 +24,7 @@
 
  4   src_bytes --> bytes that send from source to destination --> abnormally high/low is suspicious
  5   dst_bytes --> bytes that returned from destination to source --> zero in scan  
- 6   land --> source and destination ip/port same or not(0/1) --> this is an attack type itself
+ 6   land(local area network denial) --> source and destination ip/port same or not(0/1) --> this is an attack type itself
  7   wrong_fragment --> wrong/malformed fragment numbers --> Network level attack indications
  8   urgent --> Urgent Packet number --> rarely used, suspicious if unusual
 
