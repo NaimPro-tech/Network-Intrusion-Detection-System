@@ -55,7 +55,7 @@
  24  serror_rate --> SYN error connection percentage in same host
  25  srv_serror_rate --> SYN error connection percentage in same connection
  26  rerror_rate --> REJ error connection percentage in same host
- 28  same_srv_rate --> REJ error connection percentage in same connection
+ 28  same_srv_rate --> Essentially, the proportion of connections for the same service among recent connections.
  27  srv_rerror_rate --> REJ error connection percentage in the same service
  29  diff_srv_rate --> connection rates for different services
  30  srv_diff_host_rate --> connection rate to the same service but different host
